@@ -1,5 +1,7 @@
 .intro{
-    background: url('../images/intro/intro.jpg') no-repeat;
+    // background: url('../images/intro/bg.jpg') no-repeat;
+    background: linear-gradient(rgba($black, .5)), url('../images/intro/bg.jpg');
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
@@ -36,7 +38,7 @@
     &__sup-title{
         font-size: 20px;
         margin-bottom: 14px;
-        letter-spacing: 10px;
+        letter-spacing: .5em;
     }
 
     &__title{

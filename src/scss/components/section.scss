@@ -3,9 +3,40 @@
     &--nobg{
         padding: 100px 80px;
     }
+
+    &--bg{
+        padding: 45px 80px 100px;
+        color: $white;
+
+        .section__content{
+            .section__text-block{
+                order: 2;
+            }
+            .section__image-block{
+                order: 1;
+            }
+        }
+
+        .section__image-block{
+            justify-content: flex-end;
+        }
+        .section__image-block-img{
+            &::after{
+                right: auto;
+                left: -25%;
+            }
+        }
+    }
+
+    &--team{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background: linear-gradient(rgba($black, .5)), url('../images/team/bg.png');
+    }
     &__inner{
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
     }
 
     &__title{
@@ -14,6 +45,13 @@
         color: $white;
         text-transform: uppercase;
         letter-spacing: .5em;
+        margin-bottom: 45px;
+        text-align: center;
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
     }
 
     &__text-block, &__image-block{
