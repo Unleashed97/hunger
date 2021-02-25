@@ -7,11 +7,19 @@
     }
 
     &__item{
-        color: black;
+        color: white;
         font-size: 12px;
         font-weight: 700;
         text-transform: uppercase;
         padding: 37px;
+        cursor: pointer;
+        transition: background .2s linear;
+
+        &:hover{
+            background-color: $yellow;
+        }
+
+
     }
 
     &__link{

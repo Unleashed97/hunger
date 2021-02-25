@@ -3,7 +3,6 @@
     background-position: center;
     background-size: cover;
 
-    
     &__inner{
         min-height: 100vh;
         display: flex;
@@ -14,6 +13,12 @@
         position: relative;
     }
 
+    &__helm{
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
     &__opening-times{
         position: absolute;
         left: 0;
@@ -36,14 +41,15 @@
 
     &__title{
         font-size: 96px;
-        margin-bottom: 70px;
+        margin-bottom: 35px;
         position: relative;
+        padding-bottom: 30px;
 
         &::after{
             display: block;
             content: '';
             position: absolute;
-            bottom: -20px;
+            bottom: -2px;
             left: 50%;
             transform: translateX(-50%);
             width: 10%;

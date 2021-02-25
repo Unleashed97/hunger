@@ -18,10 +18,14 @@ body{
 }
 
 .container{
-    max-width: 1270px;
+    max-width: 1870px;
     height: auto;
     padding: 0 15px;
     margin: 0 auto;
+
+    &--md{
+        max-width: 1170px;
+    }
 }
 
 .btn{
