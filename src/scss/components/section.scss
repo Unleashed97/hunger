@@ -1,11 +1,11 @@
 .section{
-
+    padding: 0 80px;
     &--nobg{
-        padding: 100px 80px;
+        // padding: 100px 80px;
     }
 
     &--bg{
-        padding: 45px 80px 100px;
+        // padding: 45px 80px 100px;
         color: $white;
 
         .section__content{
@@ -35,8 +35,11 @@
         background: linear-gradient(rgba($black, .5)), url('../images/team/bg.png');
     }
     &__inner{
+        min-height: 680px;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     &__title{
@@ -52,6 +55,7 @@
     &__content{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     &__text-block, &__image-block{
@@ -119,6 +123,18 @@
                 border: 20px solid $yellow;
                 box-shadow: 0 0 50px rgba($black, .5), inset 0 0 50px rgba($black, .5);
             }
+        }
+    }
+
+    &__footer{
+        width: 100%;
+        font-size: 12px;
+        color: rgba(#333, .5);
+        padding-top: 50px;
+        text-align: center;
+
+        b{
+            font-weight: 700;
         }
     }
 }

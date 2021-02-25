@@ -1,0 +1,24 @@
+.form-booking{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    input, select{
+        width: 49%;
+        font-size: 15px;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        background-color: $gray;
+        color: rgba($black, .5);
+        padding: 15px;
+        margin-bottom: 2%;
+
+        &:placeholder{
+            color: rgba($black, .5);
+        }
+    }
+
+
+    button{
+        width: 100%;
+    }
+}

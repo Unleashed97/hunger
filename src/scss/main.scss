@@ -39,6 +39,8 @@ img{
     width: 200px;
     font-size: 12px;
     font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
     color: $white;
     padding: 15px 60px;
     border: 1px solid rgba($white, .5);
@@ -67,3 +69,4 @@ img{
 @import "components/intro";
 @import "components/social";
 @import "components/section";
+@import "components/form-booking";
