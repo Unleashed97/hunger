@@ -1,0 +1,78 @@
+.intro{
+    background: url('../images/background/intro.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    
+    &__inner{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+    }
+
+    &__opening-times{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate3d(-45%, -50%, 0) rotate(-90deg);
+        color: $white;
+        font-size: 12px;
+        font-weight: 700;
+    }
+    &__sup-title, &__title{
+        color: $white;
+        text-transform: uppercase;
+    }
+
+    &__sup-title{
+        font-size: 20px;
+        margin-bottom: 14px;
+        letter-spacing: 10px;
+    }
+
+    &__title{
+        font-size: 96px;
+        margin-bottom: 70px;
+        position: relative;
+
+        &::after{
+            display: block;
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 10%;
+            height: 5px;
+            background-color: $yellow;
+            border-radius: 20px;
+        }
+    }
+
+    &__btns{
+        button:nth-child(1){
+            margin-right: 40px;
+        }
+    }
+
+    &__down{
+        position: absolute;
+        bottom: 40px;
+        background-color: $white;
+        border-radius: 50%;
+        padding: 20px;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all .2s linear;
+        
+        &:hover{
+            transform: translateY(-10px) scale(1.1);
+            background-color: $yellow;
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.social{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    &__item{
+        border: 1px solid rgba($white, .5);
+        border-radius: 50%;
+        padding: 20px;
+        font-size: 20px;
+        color: $white;
+        margin-bottom: 20px;
+        cursor: pointer;
+        transition: background .2s linear,
+            border .2s linear;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+        &:hover{
+            background-color: $yellow;
+            border-color: $yellow;
+        }
+    }
+}
