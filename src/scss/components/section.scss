@@ -50,6 +50,12 @@
         justify-content: center;
     }
 
+    &__header{
+        text-align: center;
+        max-width: 570px;
+        margin-bottom: 40px;
+    }
+
     &__title{
         font-size: 12px;
         font-weight: 700;
@@ -64,6 +70,10 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+    }
+
+    &__content-wrapper{
+        flex-direction: column;
     }
 
     &__text-block, &__image-block{
