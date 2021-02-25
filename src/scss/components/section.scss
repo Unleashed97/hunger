@@ -1,0 +1,86 @@
+.section{
+
+    &--nobg{
+        padding: 100px 80px;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title{
+        font-size: 12px;
+        font-weight: 700;
+        color: $white;
+        text-transform: uppercase;
+        letter-spacing: .5em;
+    }
+
+    &__text-block, &__image-block{
+        width: 45%;
+    }
+
+    &__text-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        &-title{
+            // font-family: serif;
+            font-size: 36px;
+            font-weight: 700;
+            text-transform: uppercase;
+            position: relative;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+
+            &::after{
+                display: block;
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 10%;
+                height: 5px;
+                background-color: $yellow;
+            }
+        }
+
+        &-sub-title{
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        &-text{
+            font-size: 15px;
+            line-height: 2;
+        }
+    }
+
+    &__image-block{
+        display: flex;
+        justify-content: flex-start;
+
+        &-img{
+            box-shadow: 0 0 50px rgba($black, .5);
+            position: relative;
+
+            &::after{
+                display: block;
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -25%;
+                z-index: 2;
+                width: 50%;
+                height: 50%;
+                border-radius: 5px;
+                border: 20px solid $yellow;
+                box-shadow: 0 0 50px rgba($black, .5), inset 0 0 50px rgba($black, .5);
+            }
+        }
+    }
+}
