@@ -34,6 +34,14 @@
         background-size: cover;
         background: linear-gradient(rgba($black, .5)), url('../images/team/bg.png');
     }
+
+    &--specialties{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background: linear-gradient(rgba($black, .5)), url('../images/specialties/bg.png');
+    }
+
     &__inner{
         min-height: 680px;
         display: flex;
