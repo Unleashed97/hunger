@@ -1,0 +1,22 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    &__list{
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+
+    &__item{
+        color: black;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 37px;
+    }
+
+    &__link{
+        color: inherit;
+        text-decoration: none;
+    }
+}

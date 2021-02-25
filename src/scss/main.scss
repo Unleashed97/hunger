@@ -1,6 +1,7 @@
 // reset
 
 // vars
+@import 'vars';
 html{
     font-size: 10px;
 }
@@ -22,3 +23,7 @@ body{
     padding: 0 15px;
     margin: 0 auto;
 }
+
+// Components
+@import "components/header";
+@import "components/nav";
