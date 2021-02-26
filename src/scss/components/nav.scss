@@ -11,30 +11,38 @@
     }
 
     &__item{
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100%;
         width: 25%;
         color: white;
         font-size: 12px;
         font-weight: 700;
         text-transform: uppercase;
         cursor: pointer;
-        transition: background .2s linear;
-
-        &:hover{
-            background-color: $yellow;
-        }
-
+        
 
     }
 
     &__link{
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
         color: inherit;
         text-decoration: none;
-        transition: color .2s linear;
+        transition: color .2s linear,
+            background .2s linear;
+            
+        &:hover{
+            background-color: $yellow;
+        }
+
+        &.active{
+            background-color: $yellow;
+        }
     }
 
     &__logo{
