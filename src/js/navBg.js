@@ -1,4 +1,4 @@
-const nav = ()=>{
+const navBg = ()=>{
     const header = document.querySelector('.header');
     const intro = document.querySelector('.intro');
 
@@ -14,4 +14,4 @@ const nav = ()=>{
         else header.classList.remove('active');
     })
 }
-nav();
+navBg();

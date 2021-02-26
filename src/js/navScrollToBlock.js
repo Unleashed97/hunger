@@ -10,6 +10,7 @@ const navScrollToBlock = ()=>{
             });
             item.classList.add('active');
         })
+
     })
 }
 navScrollToBlock();
