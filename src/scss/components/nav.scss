@@ -40,7 +40,8 @@
     &__logo{
         height: 80%;
         opacity: 0;
-        transition: opacity .2s linear;
+        transform: translateY(-20px);
+        transition: all .2s linear;
 
         &-icon{
             height: 100%;
