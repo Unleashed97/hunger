@@ -1,5 +1,5 @@
 const menu = () =>{
-    const menuItems = document.querySelectorAll('.menu__links');
+    const menuItems = document.querySelectorAll('.menu__link');
     menuItems.forEach(item =>{
         item.addEventListener('click', e =>{
             e.preventDefault();
