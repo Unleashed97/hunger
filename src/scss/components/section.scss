@@ -94,10 +94,12 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        width: 100%;
     }
 
     &__content-wrapper{
         flex-direction: column;
+        width: 100%;
     }
 
     &__text-block, &__image-block{

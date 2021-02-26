@@ -1,0 +1,63 @@
+.form-contact{
+    max-width: 1870px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__row{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 1%;
+    }
+
+    &__text, &__button{
+        display: flex;
+        align-items: center;
+        width: 50%;
+
+        button{
+            width: 100%;
+        }
+    }
+
+    &__input-col{
+        width: 32%;
+    }
+
+    &__text-col{
+        width: 30%;
+    }
+
+    
+
+    input, textarea{
+        width: 100%;
+        font-size: 15px;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        background-color: $gray;
+        color: rgba($black, .5);
+        padding: 15px;
+        margin-bottom: 2%;
+        resize: none;
+
+        &:placeholder{
+            color: rgba($black, .5);
+        }
+    }
+
+    textarea{
+        margin-bottom: 0;
+    }
+
+    &__text-col{
+        font-size: 12px;
+        font-weight: 700;
+        color: rgba(#333, .5);
+
+        i{
+            color: $yellow;
+        }
+    }
+}

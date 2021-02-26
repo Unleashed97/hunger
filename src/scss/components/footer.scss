@@ -1,0 +1,16 @@
+.footer{
+    background-color: rgba($black, .9);
+    &__inner{
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
+    }
+    &__copy-right{
+        color: rgba($white, .5);
+        font-size: 12px;
+
+        b{
+            font-weight: 700;
+        }
+    }
+}
