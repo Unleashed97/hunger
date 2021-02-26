@@ -20,33 +20,35 @@
                 <nav class="nav">
                     <ul class="nav__list nav__list--left">
                         <li class="nav__item">
-                            <a href="#" class="nav__link">Home</a>
+                            <a href="#" class="nav__link" data-target="#intro">Home</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">About</a>
+                            <a href="#" class="nav__link" data-target="#about">About</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">Team</a>
+                            <a href="#" class="nav__link" data-target="#team">Team</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">Booking</a>
+                            <a href="#" class="nav__link" data-target="#booking">Booking</a>
                         </li>
                     </ul>
                     <div class="nav__logo">
-                        <img class="nav__logo-icon" src="images/logo/helm.svg" alt="">
+                        <a href="#" data-target="#intro">
+                            <img class="nav__logo-icon" src="images/logo/helm.svg" alt="">
+                        </a>
                     </div>
                     <ul class="nav__list nav__list--right">
                         <li class="nav__item">
-                            <a href="#" class="nav__link">Menu</a>
+                            <a href="#" class="nav__link" data-target="#menu">Menu</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">Galerie</a>
+                            <a href="#" class="nav__link" data-target="#gallery">Galerie</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">Events</a>
+                            <a href="#" class="nav__link" data-target="#events">Events</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">Contact</a>
+                            <a href="#" class="nav__link" data-target="#contact">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -55,7 +57,7 @@
     </header>
 
     <!-- intro -->
-    <div class="intro">
+    <div class="intro" id="intro">
         <div class="container">
             <div class="intro__inner">
                 <img class="intro__helm" src="images/intro/helm.svg" alt="">
@@ -63,7 +65,7 @@
                 <h1 class="intro__sup-title">Restaurant</h1>
                 <h1 class="intro__title">Hungry people</h1>
                 <div class="intro__btns">
-                    <button class="btn btn--yellow">Book table</button>
+                    <button class="btn btn--yellow" data-target="#booking">Book table</button>
                     <button class="btn">Explore</button>
                 </div>
                 <ul class="social">
@@ -85,7 +87,7 @@
     </div>
 
     <!-- about -->
-    <section class="section section--nobg section--about">
+    <section class="section section--nobg section--about" id="about">
         <div class="container">
             <div class="section__inner">
                 <div class="section__content">
@@ -105,7 +107,7 @@
     </section>
 
     <!-- our team -->
-    <section class="section section--bg section--team">
+    <section class="section section--bg section--team" id="team">
         <div class="container">
             <div class="section__inner">
                 <div class="section__title">Our team</div>
@@ -126,7 +128,7 @@
     </section>
 
     <!-- booking -->
-    <section class="section section--nobg">
+    <section class="section section--nobg" id="booking">
         <div class="container">
             <div class="section__inner">
                 <div class="section__content">
@@ -183,7 +185,7 @@
     </section>
 
     <!-- delicious menu -->
-    <section class="section section--nobg">
+    <section class="section section--nobg" id="menu">
         <div class="container">
             <div class="section__inner">
                 <div class="section__header">
@@ -356,7 +358,7 @@
     </section>
 
     <!-- Events -->
-    <section class="section section--events">
+    <section class="section section--events" id="events">
         <div class="container">
             <div class="section__inner">
                 <div class="section__title">Private Events</div>
@@ -381,7 +383,7 @@
     </section>
 
     <!-- gallery -->
-    <div class="gallery">
+    <div class="gallery" id="gallery">
         <div class="gallery__item">
             <img src="images/gallery/1.png" alt="">
         </div>
@@ -397,7 +399,7 @@
     </div>
 
     <!-- contact -->
-    <section class="section section--nobg">
+    <section class="section section--nobg" id="contact">
         <div class="container">
             <div class="section__inner">
                 <div class="section__header">
