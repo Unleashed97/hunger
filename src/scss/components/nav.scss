@@ -35,13 +35,17 @@
         text-decoration: none;
         transition: color .2s linear,
             background .2s linear;
-            
+
         &:hover{
             background-color: $yellow;
         }
 
         &.active{
             background-color: $yellow;
+        }
+
+        &:focus{
+            outline: none;
         }
     }
 
