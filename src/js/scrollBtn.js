@@ -1,5 +1,4 @@
 const scrollBtn = () =>{
-    const header = document.querySelector('.header');
     const introDownBtn = document.querySelector('.intro__down');
     const aboutBlock = document.querySelector('.section--about');
     introDownBtn.addEventListener('click', ()=>{
