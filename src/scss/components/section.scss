@@ -1,4 +1,7 @@
 .section{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     &--nobg{
         padding: 100px 80px;
     }
@@ -6,6 +9,7 @@
     &--bg{
         padding: 45px 80px 100px;
         color: $white;
+
 
         .section__content{
             .section__text-block{
@@ -28,26 +32,16 @@
     }
 
     &--team{
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background: linear-gradient(rgba($black, .5)), url('../images/team/bg.png');
+        background-image: linear-gradient(rgba($black, .5)), url('../images/team/bg.png');
     }
 
     &--specialties{
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background: linear-gradient(rgba($black, .5)), url('../images/specialties/bg.png');
+        background-image: linear-gradient(rgba($black, .5)), url('../images/specialties/bg.png');
     }
 
     &--events{
         padding: 45px 80px 40px;
-
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background: linear-gradient(rgba($black, .5)), url('../images/events/bg.png');
+        background-image: linear-gradient(rgba($black, .5)), url('../images/events/bg.png');
 
         .section__text-block{
             .section__image-block-img{
