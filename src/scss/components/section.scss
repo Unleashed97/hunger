@@ -43,26 +43,23 @@
         padding: 45px 80px 40px;
         background-image: linear-gradient(rgba($black, .5)), url('../images/events/bg.png');
 
-        .section__text-block{
+        .section__image-block:nth-child(1){
+            display: flex;
+            justify-content: flex-end;
             .section__image-block-img{
                 box-shadow: 0 0 50px rgba($black, .5);
                 position: relative;
 
                 &::after{
-                    display: block;
-                    content: '';
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
+                    right: auto;         
                     left: -25%;
-                    z-index: 2;
-                    width: 50%;
-                    height: 50%;
-                    border-radius: 5px;
-                    border: 20px solid $yellow;
-                    box-shadow: 0 0 50px rgba($black, .5), inset 0 0 50px rgba($black, .5);
                 }
             }
+        }
+
+        .section__image-block:nth-child(2){
+            display: flex;
+            justify-content: flex-start;
         }
     }
 
