@@ -131,12 +131,20 @@
         &__helm{
             width: 100px;
         }
+
+        &__down{
+            bottom: 20px;
+        }
     }
 
     @media (max-width: $mobile-sm){
         &__helm{
             top: 10px;
             width: 80px;
+        }
+
+        &__down{
+            bottom: 10px;
         }
     }
 }
