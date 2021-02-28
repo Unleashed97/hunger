@@ -127,20 +127,42 @@
         }
     }
 
-    @media (max-width: $mobile){
+    @media (min-width: $mobile-sm) and (max-width: $mobile-landscape){
         &__helm{
             width: 100px;
+        }
+
+        &__btns{
+            button:nth-child(1){
+                margin-bottom: 20px;
+            }
         }
 
         &__down{
             bottom: 20px;
         }
     }
+    
+    @media (min-width: 0px) and (max-width: $mobile-landscape) and (orientation: landscape){
+        &__helm{
+            display: none;
+        }
 
-    @media (max-width: $mobile-sm){
+        &__down{
+            display: none;
+        }
+    }
+
+    @media (min-width: 0) and (max-width: $mobile-sm-landscape){
         &__helm{
             top: 10px;
             width: 80px;
+        }
+
+        &__btns{
+            button:nth-child(1){
+                margin-bottom: 20px;
+            }
         }
 
         &__down{
