@@ -197,6 +197,10 @@
                 margin-bottom: 40px;
             }
 
+            .section__image-block{
+                width: 70%;
+            }
+
         }
 
         &--bg{
@@ -205,14 +209,14 @@
                 width: 100%;
             }
             .section__image-block{
-                width: 100%;
+                width: 70%;
                 margin-bottom: 40px; 
             }
         }
 
         &--events{
             .section__image-block{
-                width: 100%;
+                width: 70%;
             }
             .section__image-block:nth-child(1){
                 margin-bottom: 40px;
