@@ -3,15 +3,15 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: -20px;
+    right: 0px;
 
     width: 30px;
-    height: 22px;
+    height: 25px;
 
     &__item{
         width: 30px;
         height: 3px;
-        background-color: $white;
+        background-color: $yellow;
         margin-bottom: 8px;
         border-radius: 20px;
 
