@@ -1,0 +1,27 @@
+.menu-burger{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+
+    &__item{
+        width: 30px;
+        height: 3px;
+        margin-bottom: 8px;
+        background-color: $yellow;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    // MEDIA
+    @media (max-width: $laptop){
+        display: block;
+    }
+}

@@ -1,7 +1,15 @@
 .menu{
-    display: flex;
-    justify-content: center;
     margin-bottom: 40px;
+    position: relative;
+    padding: 10px 0;
+    border-top: 1px solid rgba(#333, .5);
+    border-bottom: 1px solid rgba(#333, .5);
+    min-height: 60px;
+
+    &__list{
+        display: flex;
+        justify-content: center;
+    }
 
     &__item{
         border-right: 1px solid rgba(#333, .2);
@@ -32,6 +40,13 @@
 
         &:last-child{
             border-right: 0;
+        }
+    }
+
+    // MEDIA
+    @media (max-width: $laptop){
+        &__list{
+            display: none;
         }
     }
 }
