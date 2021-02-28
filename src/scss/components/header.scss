@@ -26,4 +26,16 @@
         }
     }
 
+    //MEDIA
+    @media (min-width: $mobile-sm) and (max-width: $mobile-landscape){
+        &__inner{
+            height: 60px;
+        }
+    }
+
+    @media (min-width: 0) and (max-width: $mobile-sm-landscape){
+        &__inner{
+            height: 40px;
+        }
+    }
 }
