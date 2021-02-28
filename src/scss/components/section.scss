@@ -23,11 +23,19 @@
         .section__image-block{
             justify-content: flex-end;
         }
+
         .section__image-block-img{
             &::after{
                 right: auto;
                 left: -25%;
             }
+        }
+
+    }
+
+    &--bg, &--events{
+        .section__footer{
+            color: rgba($white, .5);
         }
     }
 
