@@ -14,14 +14,51 @@
         background-color: $yellow;
         margin-bottom: 8px;
         border-radius: 20px;
+        transition: transform .3s linear,
+            opacity .5s linear;
 
         &:last-child{
             margin-bottom: 0;
         }
     }
 
+    &.active{
+        .burger__item:nth-child(2){
+            // animation: disappear 1s linear;
+            transform: translateX(20px);
+            opacity: 0;
+        }
+
+        .burger__item:nth-child(1){
+            transform-origin: left top;
+            transform: rotate(45deg) translateY(1px);
+        }
+        .burger__item:nth-child(3){
+            transform-origin: left bottom;
+            transform: rotate(-45deg) translateY(-1px);
+        }
+    }
+
     // MEDIA
     @media (max-width: $tablet){
         display: block;
+    }
+}
+
+// @keyframes translation{
+//     0%{
+//         transform: translateX(0);
+//     }
+//     100%{
+//         transition: translateX(-20px);
+//     }
+// }
+
+@keyframes disappear{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
     }
 }
