@@ -109,7 +109,7 @@
         justify-content: center;
         text-align: center;
         &-title{
-            // font-family: serif;
+            font-family: 'Banny Bold Round';
             font-size: 36px;
             font-weight: 700;
             text-transform: uppercase;
@@ -176,6 +176,35 @@
 
         b{
             font-weight: 700;
+        }
+    }
+
+    // MEDIA
+    @media (max-width: $laptop){
+        &__content{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section__image-block-img::after{
+            border-width: 15px;
+        }
+        &--nobg{
+            padding: 70px 0;
+            .section__text-block{
+                width: 100%;
+                margin-bottom: 40px;
+            }
+        }
+
+        &--bg{
+            .section__image-block{
+                width: 100%;
+                margin-bottom: 40px;
+
+                
+            }
         }
     }
 }
