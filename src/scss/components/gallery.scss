@@ -6,4 +6,12 @@
             width: 100%;
         }
     }
+
+    // MEDIA
+    @media (max-width: $laptop){
+        flex-wrap: wrap;
+        &__item{
+            width: 50%;
+        }
+    }
 }
