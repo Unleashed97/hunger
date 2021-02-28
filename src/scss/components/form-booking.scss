@@ -21,4 +21,11 @@
     button{
         width: 100%;
     }
+
+    // MEDIA
+    @media (max-width: $mobile){
+        input, select{
+            width: 100%;
+        }
+    }
 }
