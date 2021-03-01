@@ -6,6 +6,8 @@
     border-bottom: 1px solid rgba(#333, .5);
     min-height: 60px;
 
+    position: relative;
+
     &__list{
         display: flex;
         justify-content: center;
@@ -47,6 +49,16 @@
     @media (max-width: $laptop){
         &__list{
             display: none;
+
+            &.active{
+                display: block;
+                margin-top: 60px;
+            }
+        }
+
+        &__item{
+            border-right: 0;
+            text-align: center;
         }
     }
 }

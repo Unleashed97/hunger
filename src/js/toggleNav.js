@@ -1,4 +1,4 @@
-const toggleMenu = ()=>{
+const toggleNav = ()=>{
     const burgerBtn = document.querySelector('.burger');
     const nav = document.querySelector('.nav');
     const navLinks = document.querySelectorAll('.nav__link');
@@ -16,4 +16,4 @@ const toggleMenu = ()=>{
         })
     })
 }
-toggleMenu();
+toggleNav();
