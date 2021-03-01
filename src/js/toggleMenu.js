@@ -11,7 +11,7 @@ const toggleMenu = ()=>{
             item.addEventListener('click', ()=>{
                 burgerBtn.classList.remove('active');
                 nav.classList.remove('active');
-                document.body.classList.remove('active');
+                document.body.classList.remove('no-scroll');
             })
         })
     })
