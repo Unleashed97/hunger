@@ -40,16 +40,16 @@
     }
 
     &--team{
-        background-image: linear-gradient(rgba($black, .5)), url('../images/team/bg.png');
+        background-image: linear-gradient(rgba($black, .5)), url('../images/team/bg.jpg');
     }
 
     &--specialties{
-        background-image: linear-gradient(rgba($black, .5)), url('../images/specialties/bg.png');
+        background-image: linear-gradient(rgba($black, .5)), url('../images/specialties/bg.jpg');
     }
 
     &--events{
         padding: 45px 80px 40px;
-        background-image: linear-gradient(rgba($black, .5)), url('../images/events/bg.png');
+        background-image: linear-gradient(rgba($black, .5)), url('../images/events/bg.jpg');
 
         .section__image-block:nth-child(1){
             display: flex;
