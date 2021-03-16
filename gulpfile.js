@@ -80,7 +80,7 @@ const images = () =>{
 // fonts
 const fonts = () =>{
     return src('src/fonts/**/*.{eot,woff,woff2,ttf,svg}')
-        .pipe(dest('/dist/fonts/'))
+        .pipe(dest('dist/fonts/'))
         .pipe(sync.stream())
 }
 
@@ -111,7 +111,7 @@ const watchFiles = () => {
     watch('src/**/*.html').on('change', sync.reload);
 }
 
-const build = series(cleandist, parallel(html, styles, scripts, images));
+const build = series(cleandist, parallel(html, styles, scripts, images, fonts));
 const watcher = parallel(build, watchFiles, server);
 
 
@@ -122,6 +122,7 @@ exports.scripts = scripts;
 exports.styles = styles;
 exports.copy = copy;
 exports.images = images;
+exports.fonts = fonts;
 exports.cleandist = cleandist;
 exports.build = build;
 exports.default = watcher;
