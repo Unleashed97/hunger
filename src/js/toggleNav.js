@@ -14,6 +14,18 @@ const toggleNav = ()=>{
                 document.body.classList.remove('no-scroll');
             })
         })
+
     })
+    
+    // remove 'no-scroll' class by body if the screen width more than 768px
+    window.addEventListener('resize', ()=>{
+        if(window.screen.width > 768){
+            burgerBtn.classList.remove('active');
+            nav.classList.remove('active');
+            document.body.classList.remove('no-scroll');
+        }
+    })
+    
+    
 }
 toggleNav();
