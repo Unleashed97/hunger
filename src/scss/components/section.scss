@@ -2,6 +2,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
     &--nobg{
         padding: 100px 80px;
     }
@@ -219,7 +220,8 @@
             }
             .section__image-block{
                 width: 70%;
-                margin-bottom: 60px; 
+                margin-bottom: 60px;
+                justify-content: center;
             }
         }
 

@@ -1,5 +1,41 @@
 .slider{
-    &__container{
+    width: 100%;
+    height: 100%;
+    position: relative;
 
+    &__container{
+        width: 100%;
+        height: 100%;
+    }
+    &__slide{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.swiper-pagination{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+    z-index: 999;
+    
+}
+
+.swiper-pagination-bullet{
+    background-color: #fff;
+    width: 12px;
+    height: 12px;
+    margin-right: 15px;
+}
+
+// MEDIA
+@media(max-width: $laptop){
+    .slider{
+        &__slide{
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
